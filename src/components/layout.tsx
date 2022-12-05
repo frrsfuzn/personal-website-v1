@@ -1,5 +1,5 @@
 import React, { ReactNode } from "react";
-import Navbar from "./navbar";
+import Navbar from "./organism/navbar";
 
 interface LayoutProps {
   children: ReactNode;
@@ -7,7 +7,7 @@ interface LayoutProps {
 
 function Layout({ children }: LayoutProps) {
   return (
-    <div className="h-screen w-screen">
+    <div className="h-screen w-screen pt-12">
       <Navbar />
       {children}
     </div>

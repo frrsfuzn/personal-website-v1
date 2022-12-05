@@ -1,9 +1,12 @@
-import React from 'react'
+import React from "react";
+import Layout from "../src/components/layout";
 
 function Experience() {
   return (
-    <div>Experience</div>
-  )
+    <Layout>
+      <div>Experience</div>
+    </Layout>
+  );
 }
 
-export default Experience
+export default Experience;
