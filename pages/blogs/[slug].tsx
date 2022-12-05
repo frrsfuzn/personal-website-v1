@@ -4,10 +4,12 @@ import fs from "fs";
 import matter from "gray-matter";
 import { MDXRemote, MDXRemoteSerializeResult } from "next-mdx-remote";
 import { serialize } from "next-mdx-remote/serialize";
-import SyntaxtHighlighter from "react-syntax-highlighter";
+import SyntaxHighlighter from "react-syntax-highlighter";
 import Layout from "../../src/components/layout";
 
 // TODO: need refactor this and try to custom style on tailwindcss typography
+
+import Button from '../../src/components/atoms/button'
 
 interface FrontMatter {
   title: string;
@@ -21,14 +23,12 @@ interface PostProps {
   mdxSource: MDXRemoteSerializeResult<Record<string, unknown>>;
 }
 
-const components = { SyntaxtHighlighter };
+const components = { SyntaxHighlighter, Button };
 
 function Post({ frontMatter: { title, date }, mdxSource }: PostProps) {
   return (
     <Layout>
-      <h1>{title}</h1>
-      <p>{date}</p>
-      <div className="prose">
+      <div className="mx-auto max-w-4xl w-full prose">
         <MDXRemote {...mdxSource} components={components} />
       </div>
     </Layout>

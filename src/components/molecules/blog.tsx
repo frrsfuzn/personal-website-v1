@@ -8,7 +8,7 @@ interface BlogProps {
 
 function Blog({ title, desc, date }: BlogProps) {
   return (
-    <div className="max-w-md w-full bg-white drop-shadow-lg p-5 mb-5 mr-5 rounded-md">
+    <div className="w-full bg-white drop-shadow-md p-5 rounded-md border-l-4 border-red-500">
       <h1 className="text-xl">{title}</h1>
       <p>{desc}</p>
       <label>tags:</label>

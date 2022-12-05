@@ -25,14 +25,14 @@ interface BlogProps {
 function Blogs({ posts }: BlogProps) {
   return (
     <Layout>
-      <h1>i write here, enjoy!</h1>
-      <div className="flex flex-wrap justify-center ">
+      <h1 className="text-2xl mb-5">i dump my thought here, enjoy!</h1>
+      <div className="flex flex-wrap">
         {posts.map((post) => (
-          <Link key={post.slug} href={`/blogs/${post.slug}`}>
+          <Link className="max-w-lg w-full mb-5 mr-5" key={post.slug} href={`/blogs/${post.slug}`}>
             <Blog
               title={post.frontMatter.title}
               desc={post.frontMatter.description}
-              date=""
+              date={post.frontMatter.date}
             />
           </Link>
         ))}
@@ -51,7 +51,6 @@ export const getStaticProps = async () => {
       slug: filename.split(".")[0],
     };
   });
-  console.log(posts);
   return {
     props: {
       posts,
