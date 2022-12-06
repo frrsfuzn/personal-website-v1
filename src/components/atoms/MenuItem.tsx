@@ -8,8 +8,8 @@ interface MenuItemProps {
 function MenuItem({title}:MenuItemProps) {
     const [hover, setHover] = useState(false)
     let highlight = cx({
-        'transition-all duration-500 bg-white/0 absolute top-0 bottom-0 left-0':true,
-        'backdrop-invert w-full': hover,
+        'backdrop-invert transition-[width] duration-500 bg-white/0 absolute top-0 bottom-0 left-0':true,
+        'w-full': hover,
         'w-0': !hover
     })
   return (

@@ -13,9 +13,9 @@ function NavItem({ title, active }: NavItemProps) {
     "invert backdrop-invert": active,
   });
   let highlight = cx({
-    "transition-all duration-500 bg-white/0 absolute top-0 bottom-0 left-0":
+    "transition-[width] backdrop-invert duration-500 bg-white/0 absolute top-0 bottom-0 left-0":
       true,
-    "backdrop-invert w-full": hover && !active,
+    "w-full": hover && !active,
     "w-0": !hover && !active,
   });
   return (

@@ -5,7 +5,10 @@ export default function Home() {
   return (
     <div className="container mx-auto flex justify-center items-center h-screen">
       <div className="max-w-lg">
-        <h1 className="text-3xl font-bold">Hi! I&apos;m Farras</h1>
+        <h1 className="text-3xl font-bold">
+          Hi! I&apos;m Farras
+          <span className="animate-waving-hand relative inline-flex">👋🏻</span>
+        </h1>
         <p>
           a software engineer who intrested in frontend technology. experienced
           in reactjs, nextjs, javascript, typescript, reasonml
