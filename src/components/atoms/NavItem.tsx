@@ -13,10 +13,10 @@ function NavItem({ title, active }: NavItemProps) {
     "invert backdrop-invert": active,
   });
   let highlight = cx({
-    "transition-[width] backdrop-invert duration-500 bg-white/0 absolute top-0 bottom-0 left-0":
+    "transition-[height] backdrop-invert duration-500 bg-white/0 absolute bottom-0 left-0 right-0":
       true,
-    "w-full": hover && !active,
-    "w-0": !hover && !active,
+    "h-full": hover && !active,
+    "h-0": !hover && !active,
   });
   return (
     <div className={containerStyle}>

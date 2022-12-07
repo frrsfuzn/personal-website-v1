@@ -8,9 +8,9 @@ interface MenuItemProps {
 function MenuItem({title}:MenuItemProps) {
     const [hover, setHover] = useState(false)
     let highlight = cx({
-        'backdrop-invert transition-[width] duration-500 bg-white/0 absolute top-0 bottom-0 left-0':true,
-        'w-full': hover,
-        'w-0': !hover
+        'backdrop-invert transition-[height] duration-500 bg-white/0 absolute bottom-0 left-0 right-0':true,
+        'h-full': hover,
+        'h-0': !hover
     })
   return (
     <div className='relative inline-block'>
