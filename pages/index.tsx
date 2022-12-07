@@ -1,9 +1,13 @@
+import Head from "next/head";
 import Link from "next/link";
 import MenuItem from "../src/components/atoms/MenuItem";
 
 export default function Home() {
   return (
     <div className="container mx-auto flex justify-center items-center h-screen">
+      <Head>
+        <title>Farras&apos;s Web</title>
+      </Head>
       <div className="max-w-lg">
         <h1 className="text-3xl font-bold">
           Hi! I&apos;m Farras

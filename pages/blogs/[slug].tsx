@@ -7,6 +7,7 @@ import { serialize } from "next-mdx-remote/serialize";
 import SyntaxHighlighter from "react-syntax-highlighter";
 import Layout from "../../src/components/layout";
 import Link from "next/link";
+import Head from "next/head";
 
 // TODO: need refactor this and try to custom style on tailwindcss typography
 
@@ -26,9 +27,12 @@ interface PostProps {
 
 const components = { SyntaxHighlighter, Button };
 
-function Post({ frontMatter: { tags, date }, mdxSource }: PostProps) {
+function Post({ frontMatter: { title, tags, date }, mdxSource }: PostProps) {
   return (
     <Layout>
+      <Head>
+        <title>blog: {title}</title>
+      </Head>
       <div className="mx-auto max-w-4xl w-full">
         <div className="mt-1 mb-2">
           {tags.map((tag) => (

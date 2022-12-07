@@ -1,5 +1,6 @@
 import fs from "fs";
 import matter from "gray-matter";
+import Head from "next/head";
 import path from "path";
 import React from "react";
 import Layout from "../../src/components/layout";
@@ -25,6 +26,9 @@ interface BlogProps {
 function Tags({ posts, slug }: BlogProps) {
   return (
     <Layout>
+      <Head>
+        <title>tag: {slug}</title>
+      </Head>
       <h1 className="text-2xl mb-5">tag: {slug}</h1>
       <div className="flex flex-wrap">
         {posts.map((post) => (

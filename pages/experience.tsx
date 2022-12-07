@@ -1,9 +1,13 @@
+import Head from "next/head";
 import React from "react";
 import Layout from "../src/components/layout";
 
 function Experience() {
   return (
     <Layout>
+      <Head>
+        <title>experience</title>
+      </Head>
       <div className="mx-auto max-w-5xl w-full">
         <h1 className="text-2xl mb-10">Experience</h1>
         <div>

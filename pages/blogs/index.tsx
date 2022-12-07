@@ -4,6 +4,7 @@ import path from "path";
 import React from "react";
 import Layout from "../../src/components/layout";
 import Blog from "../../src/components/molecules/blog";
+import Head from "next/head"
 
 interface FrontMatter {
   title: string;
@@ -24,6 +25,9 @@ interface BlogProps {
 function Blogs({ posts }: BlogProps) {
   return (
     <Layout>
+      <Head>
+        <title>blogs</title>
+      </Head>
       <h1 className="text-2xl mb-5">i dump my thought here, enjoy!</h1>
       <div className="flex flex-wrap">
         {posts.map((post) => (

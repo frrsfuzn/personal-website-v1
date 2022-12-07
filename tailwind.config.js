@@ -17,9 +17,28 @@ module.exports = {
           "60%": { transform: "rotate(0.0deg)" },
           "100%": { transform: "rotate(0.0deg)" },
         },
+        sliding: {
+          "5%": {
+            right: "100%",
+            left: "0"
+          },
+          "25%": {
+            right: "0",
+            left: "0"
+          },
+          "75%": {
+            right: "0",
+            left: "0"
+          },
+          "95%": {
+            right:"0",
+            left: "100%"
+          }
+        }
       },
       animation: {
         "waving-hand": "wave 2s linear infinite",
+        "sliding-width": "sliding 3s infinite"
       }, 
     },
   },
