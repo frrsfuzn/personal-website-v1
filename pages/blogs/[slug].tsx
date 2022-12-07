@@ -6,10 +6,11 @@ import { MDXRemote, MDXRemoteSerializeResult } from "next-mdx-remote";
 import { serialize } from "next-mdx-remote/serialize";
 import SyntaxHighlighter from "react-syntax-highlighter";
 import Layout from "../../src/components/layout";
+import Link from "next/link";
 
 // TODO: need refactor this and try to custom style on tailwindcss typography
 
-import Button from '../../src/components/atoms/button'
+import Button from "../../src/components/atoms/button";
 
 interface FrontMatter {
   title: string;
@@ -25,11 +26,25 @@ interface PostProps {
 
 const components = { SyntaxHighlighter, Button };
 
-function Post({ frontMatter: { title, date }, mdxSource }: PostProps) {
+function Post({ frontMatter: { tags, date }, mdxSource }: PostProps) {
   return (
     <Layout>
-      <div className="mx-auto max-w-4xl w-full prose">
-        <MDXRemote {...mdxSource} components={components} />
+      <div className="mx-auto max-w-4xl w-full">
+        <div className="mt-1 mb-2">
+          {tags.map((tag) => (
+            <Link
+              href={`/tags/${tag}`}
+              className="bg-orange-500 text-sm p-1 rounded-md mr-2"
+              key={tag}
+            >
+              {tag}
+            </Link>
+          ))}
+        </div>
+        <div className="prose my-5">
+          <MDXRemote {...mdxSource} components={components} />
+        </div>
+        <p>created: {date}</p>
       </div>
     </Layout>
   );
