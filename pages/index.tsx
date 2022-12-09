@@ -19,7 +19,7 @@ export default function Home() {
           <span className="animate-waving-hand relative inline-flex">👋🏻</span>
         </h1>
         <p>
-          a software engineer who intrested in frontend technology. experienced
+          a software engineer who interested in frontend technology. experienced
           in reactjs, nextjs, javascript, typescript, reasonml
         </p>
         <div className="mt-2">
