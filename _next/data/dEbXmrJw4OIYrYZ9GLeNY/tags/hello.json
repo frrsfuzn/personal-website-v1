@@ -1,0 +1,1 @@
+{"pageProps":{"slug":"hello","posts":[{"frontMatter":{"title":"Hello World","date":"December 9, 2022","description":"Greeting to beloved world!","tags":["hello","world"]},"slug":"hello-world"},{"frontMatter":{"title":"hello world","date":"December 5, 2022","description":"this is just a test","tags":["hello","test"]},"slug":"test"}]},"__N_SSG":true}
