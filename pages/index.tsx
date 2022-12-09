@@ -8,7 +8,7 @@ export default function Home() {
       <Head>
         <title>Farras&apos; Web</title>
       </Head>
-      <div className="max-w-lg">
+      <div className="max-w-lg px-3">
         <h1 className="text-3xl font-bold">
           Hi! I&apos;m Mochamad{" "}
           <div className="relative inline-block">

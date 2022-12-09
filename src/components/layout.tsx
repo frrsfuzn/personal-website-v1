@@ -9,7 +9,7 @@ function Layout({ children }: LayoutProps) {
   return (
     <div className="h-screen w-screen pt-12">
       <Navbar />
-      <div className="container mx-auto">
+      <div className="container mx-auto px-3">
         {children}
       </div>
     </div>
