@@ -6,11 +6,16 @@ export default function Home() {
   return (
     <div className="container mx-auto flex justify-center items-center h-screen">
       <Head>
-        <title>Farras&apos;s Web</title>
+        <title>Farras&apos; Web</title>
       </Head>
       <div className="max-w-lg">
         <h1 className="text-3xl font-bold">
-          Hi! I&apos;m Farras
+          Hi! I&apos;m Mochamad{" "}
+          <div className="relative inline-block">
+            <div className="absolute top-0 bottom-0 animate-sliding-width backdrop-invert" />
+            Farras
+          </div>{" "}
+          Fauzan
           <span className="animate-waving-hand relative inline-flex">👋🏻</span>
         </h1>
         <p>

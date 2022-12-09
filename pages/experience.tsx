@@ -13,7 +13,7 @@ function Experience() {
         <div>
           <div className="flex flex-row justify-center items-center">
             <div className="h-0.5 flex-1 bg-slate-500"/>
-            <p className="mx-5">January 2022-November 2022</p>
+            <p className="mx-5">January 2022 - November 2022</p>
             <div className="h-0.5 flex-1 bg-slate-500"/>
           </div>
           <div className="flex flex-row justify-between mb-5">
@@ -24,7 +24,7 @@ function Experience() {
         <div>
           <div className="flex flex-row justify-center items-center">
             <div className="h-0.5 flex-1 bg-slate-500"/>
-            <p className="mx-5">September 2021-December 2021</p>
+            <p className="mx-5">September 2021 - December 2021</p>
             <div className="h-0.5 flex-1 bg-slate-500"/>
           </div>
           <div className="flex flex-row justify-between">
